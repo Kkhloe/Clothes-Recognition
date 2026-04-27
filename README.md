@@ -1,10 +1,6 @@
-Here's a clean, professional, and comprehensive **README.md** for your Fashion Product Attribute Extraction Pipeline:
-
----
-
 # Fashion Product Attribute Extraction Pipeline
 
-A robust multilingual pipeline for extracting **style, color, material, composition, and visual patterns** from fashion product data (titles + descriptions).
+A robust multilingual pipeline for extracting **style, color, material and visual patterns** from fashion product data (titles + descriptions).
 
 Designed for e-commerce platforms operating across multiple European and Asian markets (Czech, Slovak, Greek, Hungarian, Slovenian, Lithuanian, Latvian, Croatian, Bulgarian, Estonian, Turkish, Romanian, Spanish, etc.).
 
@@ -14,7 +10,7 @@ Designed for e-commerce platforms operating across multiple European and Asian m
 
 - **Style Prediction**: Zero-shot semantic matching using sentence embeddings + rule boosting
 - **Color Extraction**: Multilingual keyword matching + KeyBERT candidate scoring
-- **Material & Composition**: Rule-based + NER (Named Entity Recognition) with percentage parsing
+- **Material**: Rule-based + NER (Named Entity Recognition) with percentage parsing
 - **Visual Pattern Detection**: Regex + KeyBERT + multilingual BERT embedding distillation
 - **Multilingual Support**: Automatic translation & alias generation for 13+ languages
 - **High Performance**: GPU-accelerated (T4 optimized), batch processing, progress tracking
@@ -87,9 +83,7 @@ The pipeline will:
 | `colors`                     | All detected colors |
 | `colors_highconf`            | High-confidence colors |
 | `materials_final`            | List of extracted materials |
-| `composition`                | Material composition with percentages |
 | `materials_final_str`        | Pipe-separated materials string |
-| `composition_str`            | Formatted composition string |
 | `patterns`                   | Detected visual patterns (striped, floral, etc.) |
 
 ---
@@ -135,15 +129,3 @@ Located at the top of the notebook:
 - The pipeline is designed to be robust against messy e-commerce data (HTML tags, encoding issues, mixed languages).
 
 ---
-
-## 📄 License
-
-This project is for internal use / research purposes.
-
----
-
-**Made with ❤️ for fashion tech**
-
----
-
-Would you like me to also create a shorter version (for GitHub repo overview) or add a **Usage Tips & Troubleshooting** section?
